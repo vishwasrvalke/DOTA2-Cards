@@ -21,7 +21,14 @@ const App = () => {
     <div className="App">
       <ul>
         {state?.map((hero) => (
-          <li key={hero.id}>{hero?.name?.split("npc_dota_hero_")[1]}</li>
+          <li key={hero.id}>
+            <img
+              src={`http://cdn.dota2.com/apps/dota2/images/heroes/${
+                hero?.name?.split("npc_dota_hero_")[1]
+              }_vert.jpg`}
+              alt="heronames"
+            ></img>
+          </li>
         ))}
       </ul>
     </div>
