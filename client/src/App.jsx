@@ -10,7 +10,7 @@ const App = () => {
       return new Error("API INACCESSIBLE");
     }
     const body = res?.data;
-    setstate(JSON.stringify(body?.result));
+    setstate(JSON.stringify(body?.result?.heroes));
   };
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <p>{state}</p>
+      <ul>{state}</ul>
     </div>
   );
 };
