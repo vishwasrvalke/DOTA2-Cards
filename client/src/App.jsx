@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <ul>
+      <ul style={{ listStyle: "none" }}>
         {state?.map((hero) => (
           <li key={hero.id}>
             <img
